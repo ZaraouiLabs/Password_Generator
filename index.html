@@ -54,6 +54,17 @@
 
         input[type=range] { width: 100%; margin: 15px 0; accent-color: var(--primary); }
 
+        /* SEO Content Styles */
+        .info-section { background: white; padding: 32px; border-radius: 20px; border: 1px solid var(--border); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); margin-top: 25px; }
+        .info-section h2 { color: #0f172a; font-size: 1.4rem; font-weight: 700; margin-top: 0; margin-bottom: 12px; }
+        .info-section h3 { color: #334155; font-size: 1.1rem; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+        .info-section p, .info-section li { color: #475569; font-size: 0.95rem; line-height: 1.6; }
+        .info-section ol { padding-left: 20px; margin: 0; }
+        .info-section ol li { margin-bottom: 8px; }
+        .faq-item { margin-bottom: 16px; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .privacy-badge { background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; padding: 16px; border-radius: 12px; font-size: 0.9rem; margin-top: 20px; font-weight: 500; }
+
         @media (max-width: 768px) {
             body { flex-direction: column; }
             .sidebar { display: none; }
@@ -107,6 +118,38 @@
             <div class="ad-container">
                 <script>atOptions = {'key' : '7cf39fb102b8e5ac06d9ab8ec745e58c', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {}};</script>
                 <script src="https://www.highperformanceformat.com/7cf39fb102b8e5ac06d9ab8ec745e58c/invoke.js"></script>
+            </div>
+
+            <!-- SEO Content & About Sections -->
+            <div class="info-section">
+                <h2>About UtilitySuite Password Generator</h2>
+                <p>The UtilitySuite Password Generator is a fast and lightweight tool designed to generate strong, randomized passwords on demand. Protecting online accounts requires complex credentials that resist credential stuffing and dictionary attacks. This tool gives you full control over password length and character combinations to satisfy any platform's security policy.</p>
+
+                <h2>How to Generate a Strong Password</h2>
+                <ol>
+                    <li><strong>Set Password Length:</strong> Adjust the slider to choose your desired character length (12 to 16+ characters is recommended for maximum security).</li>
+                    <li><strong>Select Character Types:</strong> Toggle uppercase letters, lowercase letters, numbers, or special symbols based on your security preferences or site requirements.</li>
+                    <li><strong>Generate:</strong> Click the <strong>"GENERATE"</strong> button to construct a new random password.</li>
+                    <li><strong>Copy to Clipboard:</strong> Click <strong>"COPY"</strong> to save the password directly to your clipboard for quick pasting.</li>
+                </ol>
+
+                <h2>Frequently Asked Questions (FAQ)</h2>
+                <div class="faq-item">
+                    <h3>Are the generated passwords stored on any server?</h3>
+                    <p>No. Passwords are generated strictly on your local machine using client-side JavaScript. They are never sent over the internet, stored in cookies, or saved in any server logs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What makes a password strong?</h3>
+                    <p>A strong password is long (14+ characters) and combines multiple character sets—including uppercase letters, lowercase letters, numbers, and special symbols—making it exponentially harder for automated brute-force attacks to crack.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I use this tool for password manager entries?</h3>
+                    <p>Yes, this generator is ideal for creating strong master passwords, application secrets, or random credentials to store securely inside your preferred password manager.</p>
+                </div>
+
+                <div class="privacy-badge">
+                    🔒 <strong>Privacy First Note:</strong> UtilitySuite prioritizes your digital security. Generated passwords are constructed in real-time inside your browser and leave no trace on remote servers.
+                </div>
             </div>
         </div>
     </main>
